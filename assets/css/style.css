@@ -22,10 +22,10 @@
   --quick-silver: hsl(0, 1%, 65%);
   --light-gray-1: hsl(0, 0%, 80%);
   --light-gray-2: hsl(0, 2%, 82%);
-  --marigold_75: hsla(136, 99%, 46%, 0.75);
+  --marigold_75: hsla(133, 95%, 49%, 0.75);
   --xiketic_90: hsla(280, 37%, 8%, 0.9);
   --cultured-2: hsl(0, 0%, 97%);
-  --marigold: hsl(141, 99%, 46%);
+  --marigold: hsl(107, 99%, 46%);
   --platinum: hsl(0, 0%, 89%);
   --dim-gray: hsl(0, 0%, 42%);
   --white_15: hsla(0, 0%, 100%, 0.15);
@@ -39,7 +39,7 @@
    * typography
    */
 
-  --ff-oxanium: 'Oxanium', ;
+  --ff-oxanium: 'quantum',;
   --ff-poppins: 'Poppins', sans-serif;
 
   --fs-1: 7rem;
