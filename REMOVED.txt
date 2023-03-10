@@ -1,0 +1,141 @@
+  <section class="section shop" id="shop" aria-label="shop"
+        style="background-image: url('./assets/images/shop-bg.jpg')">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            Gaming Product <span class="span">TUNISIAN GANG</span>
+          </h2>
+
+          <p class="section-text">
+            THESE ARE THE MAIN PRICES SUBJECT TO REDUCTION WE ALSO OFFER YOU THE BEST STORES IN TUNISIA
+          </p>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="https://cdn.mos.cms.futurecdn.net/7Y646c7zkPTofKSfkqTLVL-1200-80.jpg" width="300" height="260" loading="lazy"
+                    alt="NITRO" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="" class="card-badge skewBg">DISCORD</a>
+
+                  <h3 class="h3">
+                    <a href="" class="card-title">NITRO GAMING MONTH</a>
+                  </h3>
+
+                  <div class="card-wrapper">
+                    <p class="card-price">15DT</p>
+                    <button  class="card-btn">
+                    	<a href="">
+                      <ion-icon name="chatbox"></a></ion-icon>
+                     
+                    </button>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="https://media.discordapp.net/attachments/1044565608341180467/1075902406208004116/55020986-061B-4884-91C5-B0EC07301974.jpg?width=485&height=669" width="300" height="260" loading="lazy"
+                    alt="TG T-SHIRT" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-badge skewBg">TUNISIAN GANG</a>
+
+                  <h3 class="h3">
+                    <a href="" class="card-title">T-SHIRT TG</a>
+                  </h3>
+
+                  <div class="card-wrapper">
+                    <p class="card-price">26DT</p>
+                    <button class="card-btn">
+                    	<a href="TG T-SHIRT.html">
+                      <ion-icon name="chatbox"></a></ion-icon>
+                    </button>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="FIFA23.jpg" width="300" height="260" loading="lazy"
+                    alt="PLAY FIFA WITH TG " class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="" class="card-badge skewBg">XBOX ONE </a>
+
+                  <h3 class="h3">
+                    <a href="FIFA23.html" class="card-title">FIFA 23</a>
+                  </h3>
+
+                  <div class="card-wrapper">
+                    <p class="card-price">55DT</p>
+                    <button class="card-btn"> <a href="">
+                      <ion-icon name="chatbox"></a></ion-icon>
+                    </button>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="GAMEPASS3.jpg" width="300" height="260" loading="lazy"
+                    alt="XBOX GAME PASS" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-badge skewBg">xbox</a>
+
+                  <h3 class="h3">
+                    <a href="GAME PASS.html" class="card-title">GAME PASS ULTIMATE 3+1FREE MONTHS</a>
+                  </h3>
+
+                  <div class="card-wrapper">
+                    <p class="card-price">20DT</p>
+                    <button class="card-btn">
+                    	<a href="">
+                      <ion-icon name="chatbox"></a></ion-icon>
+                    </button>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+                </div>
+
+              </div>
+            </li>.
+        
+      </section>
