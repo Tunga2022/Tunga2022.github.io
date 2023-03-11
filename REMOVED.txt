@@ -139,3 +139,94 @@
             </li>.
         
       </section>
+------------------------------------------------------------------------------------------------------------------------------------
+   <section class="section latest-game" aria-label="latest game">
+          <div class="container">
+
+            <p class="section-subtitle">TOP ACTIVE IN</p>
+
+            <h2 class="h2 section-title">
+              TUNISIAN <span class="span">GANG</span>
+            </h2>
+
+            <ul class="has-scrollbar">
+
+              <li class="scrollbar-item">
+                <div class="latest-game-card">
+
+                  <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                    <img src="https://seiteam.net/wp-content/uploads/2020/06/it-support-levels.jpeg" width="400" height="470" loading="lazy"
+                      alt="White Walker Daily" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge skewBg">TOP ACTIVE XBOX PLAYER </a>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">USER<span class="span">NAME</span></a>
+                    </h3>
+
+                    <p class="card-price">
+                      TG SCORE <span class="span">0PTS</span>
+                    </p>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="latest-game-card">
+
+                  <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                    <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2022/02/discord-marketing-620a3dd7845a6-sej-1280x720.png" width="400" height="470" loading="lazy"
+                      alt="Hunter Killer II" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge skewBg">TOP ACTIVE PLAYSTATION PLAYER</a>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">USER <span class="span">NAME</span></a>
+                    </h3>
+
+                    <p class="card-price">
+                      TG SCORE: <span class="span">0DT</span>
+                    </p>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="latest-game-card">
+
+                  <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                    <img src="https://anydesk.com/_static/img/blog/remote-support-315b68.jpg" width="400" height="470" loading="lazy"
+                      alt="Cyberpunk Daily" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge skewBg">TOP PC PLAYER </a>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">USER <span class="span">NAME</span></a>
+                    </h3>
+
+                    <p class="card-price">
+                      TG SCORE: <span class="span">0DT</span>
+                    </p>
+
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </section>
