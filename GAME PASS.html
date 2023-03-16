@@ -2,276 +2,87 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+   
 
-    <title>TG -Product Details</title>
+    <title>TG -GANES</title>
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    
     <link href="style/main.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!-- Navigation -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light navbar-store fixed-top navbar-fixed-top"
-      data-aos="fade-down"
-      aria-label="Navbar"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="/">
-          <img src="/images/logo.svg" alt="" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-
-          <!-- Desktop Menu -->
-          <ul class="navbar-nav d-none d-lg-flex">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <img
-                  src="/images/icon-user.png"
-                  alt=""
-                  class="rounded-circle mr-2 profile-picture"
-                />
-                Hi,TG USER
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/dashboard.html"></a>
-                <a class="dropdown-item" href="/dashboard-account.html"
-                  >Settings</a
-                >
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/"></a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-inline-block mt-2" href="#">
-                <img src="/images/icon-cart-empty.svg" alt="" />
-              </a>
-            </li>
-          </ul>
-
-          <!-- Mobile Menu -->
-          <ul class="navbar-nav d-block d-lg-none">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Hi
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-inline-block" href="#">
-                Cart
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Page Content -->
-    <div class="page-content page-details">
-      <section
-        class="store-breadcrumbs"
-        data-aos="fade-down"
-        data-aos-delay="100"
-      >
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    Product Details
-                  </li>
-                </ol>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="store-gallery" id="gallery">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8" data-aos="zoom-in">
-              <transition name="slide-fade" mode="out-in">
-                <img
-                  :key="photos[activePhoto].id"
-                  :src="photos[activePhoto].url"
-                  class="w-100 main-image"
-                  alt=""
-                />
-              </transition>
-            </div>
-            <div class="col-lg-2">
-              <div class="row">
-                <div
-                  class="col-3 col-lg-12 mt-2 mt-lg-0"
-                  v-for="(photo, index) in photos"
-                  :key="photo.id"
-                  data-aos="zoom-in"
-                  data-aos-delay="100"
-                >
-                  <a href="#" @click="changeActive(index)">
-                    <img
-                      :src="photo.url"
-                      class="w-100 thumbnail-image"
-                      :class="{ active: index == activePhoto }"
-                      alt=""
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="store-details-container" data-aos="fade-up">
-        <section class="store-heading">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8">
-                <h1>GAME PASS</h1>
-                <div class="owner">By MICROSOFT</div>
-                <div class="price">20DT</div>
-              </div>
-              <div class="col-lg-2" data-aos="zoom-in">
-                <a
-                  class="btn btn-success nav-link px-4 text-white btn-block mb-3"
-                  href=""
-                  >BUY</a
-                >
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="store-description">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-lg-8">
-                <p>
-                  Xbox Game Pass has unlimited access to over 100 high-quality games—with titles added all the time. Whether you play console games, PC games, or both, there’s a plan for you. Join Xbox Game Pass for one low monthly price and discover your next favorite game.
-                </p>
-                <p>
-                  After you join the Xbox Game Pass Ultimate plan, you can continue to redeem Xbox Live Gold and Xbox Game Pass codes. These codes will automatically convert to Xbox Game Pass Ultimate at a ratio based on the ERP (Estimated Retail Price) of those codes.
-                  oken says...                                                                           You get... 
-
-                  1 month of Gold                                                                     20 days of Ultimate 
-                  3 months of Gold                                                                   50 days of Ultimate (1+ month) 
-                  6 months of Gold                                                                   79 days of Ultimate (2+ months) 
-                  12 months of Gold                                                                 4 months of Ultimate 
-                  24 months of Gold                                                                 8 months of Ultimate 
-                  1 month of Xbox Game Pass (Console Games)                      20 days of Ultimate 
-                  3 months of Xbox Game Pass (Console Games)                    2 months of Ultimate 
-                  6 months of Xbox Game Pass (Console Games)                    4 months of Ultimate 
-                  12 months of Xbox Game Pass (Console Games)                  5 months of Ultimate 
-                  24 months of Xbox Game Pass (Console Games)                  10 months of Ultimate 
-                  1 month of Xbox Game Pass PC Games                                20 days of Ultimate  </p>
-                
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="store-review">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-lg-8 mt-3 mb-3">
-                <h5></h5>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-lg-8">
-                <ul class="list-unstyled">
-                  <li class="media">
-                    <img
-                      src="/images/icon-testimonial-1.png"
-                      class="mr-3 rounded-circle"
-                      alt=""
-                    />
-                    <div class="media-body">
-                      <h5 class="mt-2 mb-1"></h5>
-                      
-                    </div>
-                  </li>
-                 
-        </section>
-      </div>
-    </div>
-
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <p class="pt-4 pb-2">
-              TG TUNISIAN GANG  BY WAEL BOUAZIZ
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="/vendor/jquery/jquery.slim.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="/vendor/vue/vue.js"></script>
-    <script>
-      var gallery = new Vue({
-        el: "#gallery",
-        mounted() {
-          AOS.init();
-        },
-        data: {
-          activePhoto: 3,
-          photos: [
-            {
-              id: 1,
-              url: "/images/product-details-1.jpg",
-            },
-            {
-              id: 2,
-              url: "/images/product-details-2.jpg",
-            },
-            {
-              id: 3,
-              url: "/images/product-details-3.jpg",
-            },
-            {
-              id: 4,
-              url: "/images/product-details-4.jpg",
-            },
-          ],
-        },
-        methods: {
-          changeActive(id) {
-            this.activePhoto = id;
-          },
-        },
-      });
-    </script>
-    <script src="/script/navbar-scroll.js"></script>
-  </body>
+    <p> 1: Bendy and the Dark Revival (XBX/S, XBO)
+    March 1: BROK the InvestiGator (XBX/S, XBO)
+    March 1: Fight'N Rage (XBX/S)
+    March 1: Leap (XBX/S, XBO)
+    March 2: Iris and the Giant (XBX/S, XBO)
+    March 2: Mayhem in Single Valley (XBX/S)
+    March 2: Meg's Monster (Xbox One)
+    March 2: PowerWash Simulator: Midgar Special Pack (XBX/S, XBO)
+    March 2: Vanaris Tactics (XBO)
+    March 3: Jurassic Pinball (XBX/S, XBO)
+    March 3: The Smile Alchemist (XBX/S, XBO)
+    March 3: Wo Long: Fallen Dynasty (XBX/S, XBO)
+    March 6: Dead Cells: Return to Castlevania (XBO)
+    March 7: Dead by Daylight: Tools of Torment (XBX/S, XBO)
+    March 7: Guilty Gear Strive (XBX/S, XBO)
+    March 7: The Outer Worlds: Spacer's Choice Edition (XBX/S)
+    March 7: Romancelvania (XBX/S)
+    March 8: KartRider: Drift (XBO)
+    March 9: Caverns of Mars: Recharged (XBO)
+    March 9: Clash: Artifacts of Chaos (XBX/S, XBO)
+    March 9: Fatal Frame: Mask of the Lunar Eclipse (XBX/S, XBO)
+    March 9: Figment 2: Creed Valley (XBX/S, XBO)
+    March 9: Monster Energy Supercross - The Official Videogame 6 (XBX/S, XBO)
+    March 9: Papetura (XBX/S)
+    March 9: Strategic Mind: Spectre of Communism (XBO)
+    March 9: Tiny Troopers: Global Ops (XBX/S, XBO)
+    March 9: Transport Fever 2: Console Edition (XBX/S, XBO)
+    March 9: Zapling Bygone (XBX/S, XBO)
+    March 10: DC Justice League: Cosmic Chaos (XBX/S, XBO)
+    March 10: Flashout 3 (XBO)
+    March 10: Mato Anomalies (XBX/S, XBO)
+    March 10: Titanium Hound (XBO)
+    March 10: Volley Pals (XBO)
+    March 14: The Forest Cathedral (XBX/S)
+    March 14: The Legend of Heroes: Trails to Azure (XBO)
+    March 14: Valheim (XBX/S, XBO)
+    March 14: Vernal Edge (XBX/S, XBO)
+    March 14: The Wreck (XBX/S, XBO)
+    March 15: Sifu (XBX/S, XBO)
+    March 15: Tricky Thief (XBX/S, XBO)
+    March 15: Two Point Campus: School Spirits (XBX/S, XBO)
+    March 15: Wolcen: Lords of Mayhem (XBX/S, XBO)
+    March 16: Alice Gear Aegis CS: Concerto of Simulatrix (PS5, PS4)
+    March 16: Anno 1800 Console Edition (XBX/S)
+    March 16: Defend the Rook (XBO)
+    March 17: Backbeat (XBX/S, XBO)
+    March 17: The Guise (XBX/S)
+    March 17: Peppa Pig: World Adventures (XBX/S, XBO)
+    March 17: WWE 2K23 (XBX/S, XBO)
+    March 21: Deceive Inc. (XBX/S)
+    March 21: Ni no Kuni 2: Revenant Kingdom - Prince's Edition (XBO)
+    March 22: Superfidos (XBX/S, XBO)
+    March 23: Not For Broadcast (XBO)
+    March 23: The Settlers: New Allies (XBX/S, XBO)
+    March 24: The Crown of Wu (XBX/S)
+    March 24: Dragon Pinball (XBX/S, XBO)
+    March 24: EA Sports PGA Tour (XBX/S)
+    March 24: I Dream of You and Ice Cream (XBO)
+    March 24: Resident Evil 4 Remake (XBX/S)
+    March 24: Witchcrafty (XBX/S, XBO)
+    March 28: Chef Life: A Restaurant Simulator (XBX/S, XBO)
+    March 28: MLB The Show 23 (XBX/S, XBO)
+    March 29: Kingdom Rush Frontiers (XBO)
+    March 29: Forza Horizon 5: Rally Adventure (XBX/S)
+    March 29: Metal: Hellsinger - Dream of the Beast (XBX/S)
+    March 29: Pirates Outlaws (XBO)
+    March 29: RunBean Galactic (XBX/S, XBO)
+    March 30: Dredge (XBX/S, XBO)
+    March 30: Infinite Guitars (XBO)
+    March 30: The Last Worker (XBX/S)
+    March 30: Lunark (XBX/S, XBO)
+    March 30: Saga of Sins (XBX/S)
+    March 31: Aery - Calm Mind 3 (XBO)
+    March 31: Blade Assault (XBX/S, XBO)</p>
 </html>

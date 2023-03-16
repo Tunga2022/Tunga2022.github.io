@@ -1844,3 +1844,14 @@ i:hover{
 .volume-bar .progress-bar:hover .progress::after{
     --size: .8em;
 }
+.card, .list-group{
+  margin: 10% auto;
+}
+.list-group-item{
+  text-transform: capitalize;
+  
+}
+.active{
+  text-align: center;
+    
+}
