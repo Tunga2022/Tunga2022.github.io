@@ -354,9 +354,10 @@ body {
 
 .logo {
   color: var(--white);
-  font-family: var(--ff-oxanium);
+  font-family: var(oblique);
   font-size: 3rem;
   font-weight: var(--fw-800);
+  
 }
 
 .header-actions {
