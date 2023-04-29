@@ -1,174 +1,130 @@
-/**
- * WEBSITE: https://themefisher.com
- * TWITTER: https://twitter.com/themefisher
- * FACEBOOK: https://www.facebook.com/themefisher
- * GITHUB: https://github.com/themefisher/
- */
+
+
+// Preloader js    
+$(window).on('load', function () {
+	'use strict';
+	$('.preloader').fadeOut(100);
+});
 
 (function ($) {
-  'use strict';
+	'use strict';
 
-  // ----------------------------
-  // AOS
-  // ----------------------------
-  AOS.init({
-    once: true
-  });
+	$(window).on('scroll', function () {
+		var scrolling = $(this).scrollTop();
+		if (scrolling > 10) {
+			$('.navigation').addClass('nav-bg');
+		} else {
+			$('.navigation').removeClass('nav-bg');
+		}
+	});
 
-  
-  $(window).on('scroll', function () {
-		//.Scroll to top show/hide
-    var scrollToTop = $('.scroll-top-to'),
-      scroll = $(window).scrollTop();
-    if (scroll >= 200) {
-      scrollToTop.fadeIn(200);
-    } else {
-      scrollToTop.fadeOut(100);
-    }
-  });
-	// scroll-to-top
-  $('.scroll-top-to').on('click', function () {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 500);
-    return false;
-  });
+	// tab
+	$('.tab-content').find('.tab-pane').each(function (idx, item) {
+		var navTabs = $(this).closest('.code-tabs').find('.nav-tabs'),
+			title = $(this).attr('title');
+		navTabs.append('<li class="nav-item"><a class="nav-link" href="#">' + title + '</a></li>');
+	});
 
-  $(document).ready(function() {
+	$('.code-tabs ul.nav-tabs').each(function () {
+		$(this).find('li:first').addClass('active');
+	});
 
-    // navbarDropdown
-    if ($(window).width() < 992) {
-      $('.main-nav .dropdown-toggle').on('click', function () {
-        $(this).siblings('.dropdown-menu').animate({
-          height: 'toggle'
-        }, 300);
-      });
-    }
+	$('.code-tabs .tab-content').each(function () {
+		$(this).find('div:first').addClass('active');
+	});
 
-    // -----------------------------
-    //  Testimonial Slider
-    // -----------------------------
-    $('.testimonial-slider').slick({
-      slidesToShow: 2,
-      infinite: true,
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      dots: true,
-      responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    });
+	$('.nav-tabs a').click(function (e) {
+		e.preventDefault();
+		var tab = $(this).parent(),
+			tabIndex = tab.index(),
+			tabPanel = $(this).closest('.code-tabs'),
+			tabPane = tabPanel.find('.tab-pane').eq(tabIndex);
+		tabPanel.find('.active').removeClass('active');
+		tab.addClass('active');
+		tabPane.addClass('active');
+	});
 
+	// Accordions
+	$('.collapse').on('shown.bs.collapse', function () {
+		$(this).parent().find('.ti-plus').removeClass('ti-plus').addClass('ti-minus');
+	}).on('hidden.bs.collapse', function () {
+		$(this).parent().find('.ti-minus').removeClass('ti-minus').addClass('ti-plus');
+	});
 
-    // -----------------------------
-    //  Video Replace
-    // -----------------------------
-    $('.video-box i').click(function () {
-      var video = '<iframe class="border-0" allowfullscreen src="' + $(this).attr('data-video') + '"></iframe>';
-      $(this).replaceWith(video);
-    });
+	//post slider
+	$('.post-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		dots: false,
+		arrows: true,
+		prevArrow: '<button type=\'button\' class=\'prevArrow\'><i class=\'ti-angle-left\'></i></button>',
+		nextArrow: '<button type=\'button\' class=\'nextArrow\'><i class=\'ti-angle-right\'></i></button>'
+	});
+
+	// copy to clipboard
+	$('.copy').click(function () {
+		$(this).siblings('.inputlink').select();
+		document.execCommand('copy');
+	});
 
 
-    // -----------------------------
-    //  Count Down JS
-    // -----------------------------
-    var syoTimer = $('#simple-timer');
-    if (syoTimer) {
-      $('#simple-timer').syotimer({
-        year: 2023,
-        month: 9,
-        day: 1,
-        hour: 0,
-        minute: 0
-      });
-    }
+	// instafeed
+	if (($('#instafeed').length) !== 0) {
+		var accessToken = $('#instafeed').attr('data-accessToken');
+		var userFeed = new Instafeed({
+			get: 'user',
+			resolution: 'low_resolution',
+			accessToken: accessToken,
+			template: '<div class="instagram-post"><a href="{{link}}" target="_blank"><img src="{{image}}"></a></div>'
+		});
+		userFeed.run();
+	}
+
+	setTimeout(function () {
+		$('.instagram-slider').slick({
+			dots: false,
+			speed: 300,
+			autoplay: true,
+			arrows: false,
+			slidesToShow: 8,
+			slidesToScroll: 1,
+			responsive: [{
+					breakpoint: 1024,
+					settings: {
+						slidesToShow: 6
+					}
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						slidesToShow: 4
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 2
+					}
+				}
+			]
+		});
+	}, 1500);
 
 
-    // -----------------------------
-    //  Story Slider
-    // -----------------------------
-    $('.about-slider').slick({
-      slidesToShow: 1,
-      infinite: true,
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      dots: true
-    });
+	// popup video
+	var $videoSrc;
+	$('.video-btn').click(function () {
+		$videoSrc = $(this).data('src');
+	});
+	console.log($videoSrc);
+	$('#myModal').on('shown.bs.modal', function (e) {
+		$('#video').attr('src', $videoSrc + '?autoplay=1&amp;modestbranding=1&amp;showinfo=0');
+	});
+	$('#myModal').on('hide.bs.modal', function (e) {
+		$('#video').attr('src', $videoSrc);
+	});
 
 
-    // -----------------------------
-    //  Quote Slider
-    // -----------------------------
-    $('.quote-slider').slick({
-      slidesToShow: 1,
-      infinite: true,
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      dots: true
-    });
-
-
-    // -----------------------------
-    //  Client Slider
-    // -----------------------------
-    $('.client-slider').slick({
-      slidesToShow: 4,
-      infinite: true,
-      arrows: false,
-      // autoplay: true,
-      autoplaySpeed: 2000,
-      dots: true,
-      responsive: [
-        {
-          breakpoint: 0,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 575,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 2
-          }
-        }
-      ]
-    });
-
-
-    // scroll
-    // $('.scrollTo').on('click', function (e) {
-    //   e.preventDefault();
-    //   var target = $(this).attr('href');
-    //   $('html, body').animate({
-    //     scrollTop: ($(target).offset().top)
-    //   }, 500);
-    // });
-
-  });
 
 })(jQuery);
