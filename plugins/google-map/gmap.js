@@ -1,138 +1,221 @@
+/**
+ * Created by Kausar on 06/10/2016.
+ */
 window.marker = null;
 
 function initialize() {
-  var map;
-  var latitude = $('#map_canvas').attr('data-latitude');
-  var longitude = $('#map_canvas').attr('data-longitude');
-  var nottingham = new google.maps.LatLng(latitude, longitude);
-  var style = [{
-      "featureType": "landscape",
-      "stylers": [{
-          "hue": "#FFAD00"
+    var map;
+
+    var nottingham = new google.maps.LatLng(41.4709768, -81.789658);
+
+    var style = [
+        {
+            "featureType": "administrative",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#444444"
+                }
+            ]
         },
         {
-          "saturation": 50.2
+            "featureType": "administrative.land_parcel",
+            "elementType": "labels",
+            "stylers": [
+                {
+                    "color": "#000000"
+                }
+            ]
         },
         {
-          "lightness": -34.8
+            "featureType": "administrative.land_parcel",
+            "elementType": "labels.text",
+            "stylers": [
+                {
+                    "saturation": "0"
+                }
+            ]
         },
         {
-          "gamma": 1
+            "featureType": "administrative.land_parcel",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#000000"
+                }
+            ]
+        },
+        {
+            "featureType": "landscape",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "color": "#f2f2f2"
+                }
+            ]
+        },
+        {
+            "featureType": "poi",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "saturation": -100
+                },
+                {
+                    "lightness": 45
+                }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "simplified"
+                },
+                {
+                    "color": "#eb6aa4"
+                },
+                {
+                    "gamma": "3.5"
+                },
+                {
+                    "weight": "1"
+                }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "labels",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "labels.text.stroke",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "labels.icon",
+            "stylers": [
+                {
+                    "color": "#cbc7c7"
+                },
+                {
+                    "gamma": "2.00"
+                }
+            ]
+        },
+        {
+            "featureType": "road.arterial",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "simplified"
+                }
+            ]
+        },
+        {
+            "featureType": "road.arterial",
+            "elementType": "labels.icon",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "transit",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "color": "#eb6aa4"
+                },
+                {
+                    "visibility": "on"
+                },
+                {
+                    "saturation": "0"
+                },
+                {
+                    "lightness": "0"
+                },
+                {
+                    "gamma": "1"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "featureType": "road.highway",
-      "stylers": [{
-          "hue": "#FFAD00"
-        },
-        {
-          "saturation": -19.8
-        },
-        {
-          "lightness": -1.8
-        },
-        {
-          "gamma": 1
+    ];
+
+    var mapOptions = {
+        // SET THE CENTER
+        center: nottingham,
+
+        // SET THE MAP STYLE & ZOOM LEVEL
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+
+        // SET THE BACKGROUND COLOUR
+        backgroundColor:"#000",
+
+        // REMOVE ALL THE CONTROLS EXCEPT ZOOM
+        zoom:12,
+        panControl:false,
+        zoomControl:true,
+        mapTypeControl:false,
+        scaleControl:false,
+        streetViewControl:false,
+        overviewMapControl:false,
+        zoomControlOptions: {
+            style:google.maps.ZoomControlStyle.LARGE
         }
-      ]
-    },
-    {
-      "featureType": "road.arterial",
-      "stylers": [{
-          "hue": "#FFAD00"
-        },
-        {
-          "saturation": 72.4
-        },
-        {
-          "lightness": -32.6
-        },
-        {
-          "gamma": 1
-        }
-      ]
-    },
-    {
-      "featureType": "road.local",
-      "stylers": [{
-          "hue": "#FFAD00"
-        },
-        {
-          "saturation": 74.4
-        },
-        {
-          "lightness": -18
-        },
-        {
-          "gamma": 1
-        }
-      ]
-    },
-    {
-      "featureType": "water",
-      "stylers": [{
-          "hue": "#00FFA6"
-        },
-        {
-          "saturation": -63.2
-        },
-        {
-          "lightness": 38
-        },
-        {
-          "gamma": 1
-        }
-      ]
-    },
-    {
-      "featureType": "poi",
-      "stylers": [{
-          "hue": "#FFC300"
-        },
-        {
-          "saturation": 54.2
-        },
-        {
-          "lightness": -14.4
-        },
-        {
-          "gamma": 1
-        }
-      ]
+
     }
-  ];
-  var mapOptions = {
-    center: nottingham,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    backgroundColor: "#000",
-    zoom: 15,
-    panControl: false,
-    zoomControl: true,
-    mapTypeControl: false,
-    scaleControl: false,
-    streetViewControl: false,
-    overviewMapControl: false,
-    zoomControlOptions: {
-      style: google.maps.ZoomControlStyle.LARGE
-    }
-  }
-  map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-  var mapType = new google.maps.StyledMapType(style, {
-    name: "Grayscale"
-  });
-  map.mapTypes.set('grey', mapType);
-  map.setMapTypeId('grey');
-  var marker_image = 'plugins/google-map/images/marker.png';
-  var pinIcon = new google.maps.MarkerImage(marker_image, null, null, null, new google.maps.Size(37, 55));
-  marker = new google.maps.Marker({
-    position: nottingham,
-    map: map,
-    icon: pinIcon,
-    title: 'Shoper'
-  });
+    map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    // SET THE MAP TYPE
+    var mapType = new google.maps.StyledMapType(style, {name:"Grayscale"});
+    map.mapTypes.set('grey', mapType);
+    map.setMapTypeId('grey');
+
+    //CREATE A CUSTOM PIN ICON
+    var marker_image ='plugins/google-map/images/marker.png';
+    var pinIcon = new google.maps.MarkerImage(marker_image,null,null, null,new google.maps.Size(32, 32));
+
+    marker = new google.maps.Marker({
+        position: nottingham,
+        map: map,
+        icon: pinIcon,
+        title: 'newsBox'
+    });
 }
-var map = document.getElementById('map_canvas');
-if (map != null) {
-  google.maps.event.addDomListener(window, 'load', initialize);
+
+var google_map_canvas = $('#map');
+
+if (google_map_canvas.length) {
+    google.maps.event.addDomListener(window, 'load', initialize);
 }
