@@ -1,0 +1,26 @@
+<div class="banner text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 mx-auto">
+        <h1 class="mb-5"> <br> فاش خممت ليوم</h1>
+        <ul class="list-inline widget-list-inline">
+        
+        <li class="list-inline-item"><a href="">نرسم</a></li>
+          <li class="list-inline-item"><a href="">نصور</a></li>
+          <li class="list-inline-item"><a href="">نقرى</a></li>
+          <li class="list-inline-item"><a href="">نطور</a></li>
+          <li class="list-inline-item"><a href="">نلعب</a></li>
+          <li class="list-inline-item"><a href="">نخرج</a></li>
+          <li class="list-inline-item"><a href="">نبحر</a></li>
+          <li class="list-inline-item"><a href="">نرقد</a></li>
+          <li class="list-inline-item"><a href="">نطيب</a></li>
+          <li class="list-inline-item"><a href="">نقرا قرأن </a></li>
+          <li class="list-inline-item"><a href="">نتفرج في مسلسل</a></li>
+          <li class="list-inline-item"><a href="">نهبط ستوري</a></li>
+          <li class="list-inline-item"><a href="">نعمل سبور</a></li>
+          <li class="list-inline-item"><a href="">نمشي للقهوة</a></li>
+          <li class="list-inline-item"><a href="">نخدم</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
