@@ -1,26 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>MY SPACE </title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-</head>
-<body>
-	<div class="container">
-		<div class="contact-box">
-			<div class="left"></div>
-			<div class="right">
-				<h2>المشاركة في البطولة الصيفية</h2>
-				<form action="https://formsubmit.co/myspacetunis@gmail.com" method="POST">
-				<input type="text" class="field" placeholder="اسمك واسم فريقك">
-				<input type="text" class="field" placeholder="البريد الالكتروني">
-				<input type="text" class="field" placeholder="اسم فريقك في FUT ">
-				<textarea placeholder="اكتب لنا معلومات عن فريقك" class="field"></textarea>
-				<button class="btn">ارسل</button>
-			</form>
-			</div>
-		</div>
-	</div>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>MY SPACE </title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">MY SPACE </h1>
+      <form action="https://formsubmit.co/a07a4265b6be1263fcf71a4b6747dd04" method="POST">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">Full Name</label>
+            <input type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter Full Name"/>
+          </div>
+          <div class="user-input-box">
+            <label for="username">Username on xbox or ps 4</label>
+            <input type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter Username"/>
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Email"/>
+          </div>
+          
+          <div class="user-input-box">
+            <label for="password">THE TEAM YOU WANT TO PLAY </label>
+            <input type="password"
+                    id="password"
+                    name="password"
+                    placeholder="TEAM "/>
+          </div>
+          <div class="user-input-box">
+            <label for="confirmPassword">YOUR TEAM ON FUT </label>
+            <input type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="TEAM "/>
+          </div>
+        </div>
+        <div class="gender-details-box">
+          <span class="gender-title">IM PLAY ON</span>
+          <div class="gender-category">
+            <input type="radio" name="gender" id="male">
+            <label for="XBOX ONE ">XBOX ONE </label>
+            <input type="radio" name="gender" id="female">
+            <label for="PS4">PLAYSTATION 4</label>
+            
+          </div>
+        </div>
+        <div class="form-submit-btn">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </body>
 </html>

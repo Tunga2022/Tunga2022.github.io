@@ -1,121 +1,143 @@
 *{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body{
-	height: 100vh;
-	width: 100%;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-23/shared-assets/common/f23-features-page-bg-xl-l-m.jpg.adapt.320w.jpg);
+    background-size: cover;
 }
 
 .container{
-	position: relative;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 20px 100px;
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
 }
 
-.container:after{
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background: url("https://cdn.discordapp.com/attachments/984430533914284042/1115233798351761458/E196FA69-FD46-4BC3-8C84-47F6B6987752.jpg") no-repeat center;
-	background-size: cover;
-	filter: blur(50px);
-	z-index: -1;
-}
-.contact-box{
-	max-width: 850px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	background-color: #fff;
-	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
 }
 
-.left{
-	background: url("https://cdn.discordapp.com/attachments/984430533914284042/1115233798351761458/E196FA69-FD46-4BC3-8C84-47F6B6987752.jpg") no-repeat center;
-	background-size: cover;
-	height: 100%;
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
 }
 
-.right{
-	padding: 25px 40px;
+.user-input-box:nth-child(2n){
+    justify-content: end;
 }
 
-h2{
-	position: relative;
-	padding: 0 0 10px;
-	margin-bottom: 10px;
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
 }
 
-h2:after{
-	content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
-    background-color: #2ecc71;
+.user-input-box label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
 }
 
-.field{
-	width: 100%;
-	border: 2px solid rgba(0, 0, 0, 0);
-	outline: none;
-	background-color: rgba(230, 230, 230, 0.6);
-	padding: 0.5rem 1rem;
-	font-size: 1.1rem;
-	margin-bottom: 22px;
-	transition: .3s;
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
 }
 
-.field:hover{
-	background-color: rgba(0, 0, 0, 0.1);
+.gender-title{
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
 }
 
-textarea{
-	min-height: 150px;
+.gender-category{
+    margin: 15px 0;
+    color: white;
 }
 
-.btn{
-	width: 100%;
-	padding: 0.5rem 1rem;
-	background-color: #2ecc71;
-	color: #fff;
-	font-size: 1.1rem;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	transition: .3s;
+.gender-category label{
+    padding: 0 20px 0 5px;
 }
 
-.btn:hover{
-    background-color: #6b055a;
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
 }
 
-.field:focus{
-    border: 2px solid rgba(30,85,250,0.47);
-    background-color: #fff;
+.form-submit-btn{
+    margin-top: 40px;
 }
 
-@media screen and (max-width: 880px){
-	.contact-box{
-		grid-template-columns: 1fr;
-	}
-	.left{
-		height: 200px;
-	}
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background: rgba(63, 114, 76, 0.7);
+}
+
+.form-submit-btn input:hover{
+    background: rgba(56, 204, 93, 0.7);
+    color: rgb(255, 255, 255);
+}
+
+@media(max-width: 600px){
+    .container{
+        min-width: 280px;
+    }
+
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
 }
