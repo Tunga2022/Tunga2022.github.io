@@ -1,68 +1,414 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>MY SPACE </title>
-    <meta name="viewport" content="width=device-width,
-      initial-scale=1.0"/>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="form-title">MY SPACE </h1>
-      <form action="https://formsubmit.co/a07a4265b6be1263fcf71a4b6747dd04" method="POST">
-        <div class="main-user-info">
-          <div class="user-input-box">
-            <label for="fullName">Full Name</label>
-            <input type="text"
-                    id="fullName"
-                    name="fullName"
-                    placeholder="Enter Full Name"/>
-          </div>
-          <div class="user-input-box">
-            <label for="username">Username on xbox or ps 4</label>
-            <input type="text"
-                    id="username"
-                    name="username"
-                    placeholder="Enter Username"/>
-          </div>
-          <div class="user-input-box">
-            <label for="email">Email</label>
-            <input type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter Email"/>
-          </div>
+<html lang="zxx">
+
+
+
+<head>
+  <meta charset="utf-8">
+  <title>MY SPACE </title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="plugins/font-awesome/font-awesome.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- venobox -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+  <!-- slick -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- AOS -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+  <link rel="icon" href="logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <!-- preloader start -->
+  <!-- preloader end -->
+
+  <div class="preloader">
+    <img src="images/preloader.gif" alt="preloader" class="img-fluid">
+  </div>
+
+<!-- nav part start -->
+<div class="naviagtion naviagtion-white fixed-top transition">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <a class="navbar-brand p-0" href="index-2.html"><img src="logo.png" height="120" width="120" alt="Agico"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark active text-capitalize" href="#" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Home</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item text-color" href="index.html">Home </a>
+             
+            </div>
+          </li>
           
-          <div class="user-input-box">
-            <label for="password">THE TEAM YOU WANT TO PLAY </label>
-            <input type="password"
-                    id="password"
-                    name="password"
-                    placeholder="TEAM "/>
-          </div>
-          <div class="user-input-box">
-            <label for="confirmPassword">YOUR TEAM ON FUT </label>
-            <input type="password"
-                    id="confirmPassword"
-                    name="confirmPassword"
-                    placeholder="TEAM "/>
-          </div>
-        </div>
-        <div class="gender-details-box">
-          <span class="gender-title">IM PLAY ON</span>
-          <div class="gender-category">
-            <input type="radio" name="gender" id="male">
-            <label for="XBOX ONE ">XBOX ONE </label>
-            <input type="radio" name="gender" id="female">
-            <label for="PS4">PLAYSTATION 4</label>
-            
-          </div>
-        </div>
-        <div class="form-submit-btn">
-          <input type="submit" value="Register">
-        </div>
-      </form>
+         
+         
+         
+        </ul>
+        <a href="https://discord.gg/tunisian-gang-your-own-world-963933542591627264" class="btn btn-outline-primary text-white ml-3">DISCORD </a>
+      </div>
+    </nav>
+  </div>
+</div>
+<!-- nav part end -->
+
+<!-- banner -->
+<section class="hero-area hero-area-lg position-relative">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 text-center text-lg-left mb-4 mb-lg-0">
+        <h1 class="text-dark position-relative">BUILD YOUR SPACE <span class="watermark"></span></h1>
+        <p class="text-dark mb-4"> <br> </p>
+        <ul class="list-inline">
+          <li class="list-inline-item mx-1 my-2">
+            <a href="https://discord.gg/tunisian-gang-your-own-world-963933542591627264" class="btn btn-primary">
+              <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6cc3c481a15a141738_icon_clyde_white_RGB.png"  class="img-fluid mr-2 rounded" alt="play-store">DISCORD </a>
+          </li>
+          <li class="list-inline-item mx-1 my-2">
+            <a href="https://www.facebook.com/profile.php?id=100070970837407&mibextid=LQQJ4d" class="btn btn-outline-primary"><i class="fa fa-facebook text-secondary mr-3 transition"></i>FACEBOOK</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <img src="https://static.tvtropes.org/pmwiki/pub/images/minecraft_mobs_preview.png" class="img-fluid w-100 shadow rounded-lg" alt="app-interface" data-aos="fade-left" data-aos-delay="1000">
+      </div>
     </div>
-  </body>
+  </div>
+  <img src="images/homepage-3/banner-shape.png" class="img-fluid bg-shape-4" alt="shape">
+</section>
+<!-- banner -->
+
+<!-- feature -->
+<section class="position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="00">
+        <div class="card border-0 shadow rounded-xs pt-5">
+          <div class="card-body">
+            <i class="fa fa-play icon-lg icon-blue icon-bg-blue icon-bg-circle mb-3"></i>
+            <h4 class="mt-4 mb-3">GAMING SPACE </h4>
+            <p>build a clan and have fun with your clan participate in tournaments and be the first </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+        <div class="card border-0 shadow rounded-xs pt-5">
+          <div class="card-body">
+            <i class="fa fa-gears icon-lg icon-orange icon-bg-orange icon-bg-circle mb-3"></i>
+            <h4 class="mt-4 mb-3">EASY TO USE </h4>
+            <p>we chose  the Discord app to be the app where you find My space </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+        <div class="card border-0 shadow rounded-xs pt-5">
+          <div class="card-body">
+            <i class="fa fa-shield icon-lg icon-purple icon-bg-purple icon-bg-circle mb-3"></i>
+            <h4 class="mt-4 mb-3">BEST STAFF </h4>
+            <p>We have chosen our best team to help you in my space </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+        <div class="card border-0 shadow rounded-xs pt-5">
+          <div class="card-body">
+            <i class="fa fa-clock-o icon-lg icon-green icon-bg-green icon-bg-circle mb-3"></i>
+            <h4 class="mt-4 mb-3">7/24 Hour Service</h4>
+            <p>enjoy 7 hours of service every day !</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="images/dot/dot-1.png" class="img-fluid feature-bg-shape-1" alt="background-dots">
+  <img src="images/shape/shape-bg.png" class="img-fluid feature-bg-shape-2" alt="background-shape">
+</section>
+<!-- feature -->
+
+<!-- integration -->
+<section class="section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 pr-lg-5">
+        <img src="https://media.discordapp.net/attachments/984430533914284042/1115685232889319465/97C93A97-CE42-41FE-AD3C-8238645391D3.jpg?width=670&height=670" class="img-fluid" alt="dashboard" data-aos="fade-right">
+      </div>
+      <div class="col-md-6 pl-lg-5">
+        <p class="subtitle" data-aos="fade-up">01</p>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">HOW TO YOU ACTIVATE YOURSELF?</h2>
+        <p class="mb-4" data-aos="fade-up" data-aos-delay="400">When you enter the server, you will notice that there are three text rooms, and the purpose of this is to protect the server from any spam or disturbance attempts, also to preserve and protect the server
+          </p>
+        <ul class="list-unstyled">
+          <li class="d-flex mb-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="pr-3 pr-lg-5">
+              <i class="fa fa-check text-secondary bg-white shadow icon-sm"></i>
+            </div>
+            <div>
+              <h5>THE STRONGEST PROTECTION </h5>
+              <p></p>
+            </div>
+          </li>
+          <li class="d-flex" data-aos="fade-up" data-aos-delay="550">
+            <div class="pr-3 pr-lg-5">
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 pr-lg-5">
+        <p class="subtitle" data-aos="fade-up">02</p>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">WHAT IS THE ROLE OF "VERIFICATION ROOM "
+        </h2>
+        <p data-aos="fade-up" data-aos-delay="300">CLICK ON VERIFICATION ROOM AND GET YOUR VERIFICATION </p>
+        <p class="mb-4" data-aos="fade-up" data-aos-delay="400"></p>
+        <a href="#" class="mb-4 btn btn-outline-primary" data-aos="fade-up" data-aos-delay="500">HERE</a>
+      </div>
+      <div class="col-md-6 pl-lg-5">
+        <img src="https://media.discordapp.net/attachments/984430533914284042/1115697994176667678/48FB785D-81FB-4B75-9C09-70B885905CA8.jpg?width=670&height=670" class="img-fluid" alt="dashboard" data-aos="fade-left" data-aos-delay="200">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 pr-lg-5">
+        <img src="https://media.discordapp.net/attachments/984430533914284042/1115697994457682101/92769E11-B557-4BEF-89A3-4970D79C8648.jpg?width=670&height=670" class="img-fluid" alt="dashboard" data-aos="fade-right">
+      </div>
+      <div class="col-md-6 pl-lg-5">
+        <p class="subtitle" data-aos="fade-up">03</p>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">VERIFICATION WITH BOT </h2>
+        <p class="mb-4" data-aos="fade-up" data-aos-delay="400">press on verify bottom and congratulation </p>
+        <ul class="list-unstyled">
+          <li class="d-flex mb-4" data-aos="fade-up" data-aos-delay="500">
+           
+              
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- integration -->
+
+<!-- counter -->
+<section class="bg-light py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0 text-center">
+        <p class="h2 text-dark"><span class="counter" data-count="2426">0</span>K+</p>
+        <h6 class="text-dark font-weight-normal">member on my space </h6>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0 text-center">
+        <p class="h2 text-dark"><span class="counter" data-count="170">0</span>+</p>
+        <h6 class="text-dark font-weight-normal">online </h6>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0 text-center">
+        <p class="h2 text-dark"><span class="counter" data-count="15">0</span>+</p>
+        <h6 class="text-dark font-weight-normal">active membre </h6>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0 text-center">
+        <p class="h2 text-dark"><span class="counter" data-count="7">0</span>+</p>
+        <h6 class="text-dark font-weight-normal">giveaways every week </h6>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- counter -->
+
+<!-- download -->
+<section class="section bg-gradient-purple bg-triangles position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 mx-auto text-center">
+        <h2 class="section-title text-white">MY SPACE LIVE </h2>
+        <p class="text-white"></p>
+      </div>
+      <div class="col-12 section border-bottom border-gray mb-80">
+        <div class="pulse-container">
+          <div class="pulse-box">
+            <a class="venobox play-icon icon-center" data-autoplay="true" data-vbtype="video"
+              href="https://youtu.be/971V-LsPoZg"><i class="fa fa-play text-secondary"></i></a>
+            <svg class="pulse-svg" width="90px" height="90px" viewBox="0 0 50 50" version="1.1"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <circle class="circle first-circle" fill="#fff" cx="25" cy="25" r="25"></circle>
+              <circle class="circle second-circle" fill="#fff" cx="25" cy="25" r="25"></circle>
+              <circle class="circle third-circle" fill="#fff" cx="25" cy="25" r="25"></circle>
+              <circle class="circle" fill="#fff" cx="25" cy="25" r="25"> </circle>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- parthner -->
+      <div class="col-12">
+        <ul class="list-inline d-flex justify-content-between align-items-center position-relative zindex-1">
+          <li class="list-inline-item"><img class="img-fluid p-2" src="https://cdn.discordapp.com/attachments/984430533914284042/1115718051388727418/41F75C1B-5B85-4AEF-B1E8-28CBC30AE0AB.png" height="120" width="120"  alt="partner-1"></li>
+          <li class="list-inline-item"><img class="img-fluid p-2" src="https://1000logos.net/wp-content/uploads/2021/06/Discord-logo.png" height="120" width="120" alt="partner-2"></li>
+          <li class="list-inline-item"><img class="img-fluid p-2" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" height="120" width="120" alt="partner-2"></li>
+      
+     
+        </ul>
+      </div>
+      <!-- parthner -->
+    </div>
+  </div>
+</section>
+<!-- download -->
+
+<!-- testimonial -->
+<section class="section bg-light bg-map">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" >
+        <iframe src="https://discord.com/widget?id=963933542591627264&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div class="col-md-6">
+        <p class="subtitle">MY SPACE  </p>
+        <h2 class="section-title mb-5">MY SPACE RULES </h2>
+        <div class="testimonial-slider-single">
+          <div class="slider-item">
+            <img class="mb-5" src="images/quotation/quotation.png" alt="quote-icon">
+            <p class="font-italic mb-4">Respect everyone's privacy
+Being part of this platform requires mutual trust. Authentic, expressive discussions make groups great, but may also be sensitive and private. What's shared in the group should stay in the group.
+
+No hate speech or bullying
+Make sure that everyone feels safe. Bullying of any kind isn't allowed, and degrading comments about things such as race, religion, culture, sexual orientation, gender or identity will not be tolerated.</p>
+            <h5 class="text-dark">BOUAZIZ</h5>
+            <h6 class="text-color">MY SPACE / TG TEAM </h6>
+          </div>
+          <div class="slider-item">
+            <img class="mb-5" src="images/quotation/quotation.png" alt="quote-icon">
+            <p class="font-italic mb-4">Be kind and courteous
+We're all in this together to create a welcoming environment. Let's treat everyone with respect. Healthy debates are natural, but kindness is required.
+
+No inappropriate language
+Members are to treat one another with respect and dignity, any posts containing inappropriate language will be deleted and repeat offenders will be removed from the platform.</p>
+            <h5 class="text-dark">BOUAZIZ </h5>
+            <h6 class="text-color">MY SPACE / TG TEAM</h6>
+          </div>
+          <div class="slider-item">
+            <img class="mb-5" src="images/quotation/quotation.png" alt="quote-icon">
+            <p class="font-italic mb-4">No promotions or spam
+Give more to this group than you take. Self-promotion, spam and irrelevant links aren't allowed. No promotion of any other Discord servers allowed anywhere in this server.  Do not spam any of the channels with repeat posts or inappropriate comments.
+
+Sharing homeschool events & activities
+Feel free to share homeschooling events, other local activities relevant to homeschooling, and any information that would be of value to our community.﻿</p>
+            <h5 class="text-dark">BOUAZIZ</h5>
+            <h6 class="text-color">MY SPACE / TG TEAM</h6>
+          </div>
+          <div class="slider-item">
+            <img class="mb-5" src="images/quotation/quotation.png" alt="quote-icon">
+            <p class="font-italic mb-4">Posts
+Please make sure you're posting in the correct category for your respective posts. Do not post the same video, links, info, or other content multiple time in a row or within the same day.
+
+Games
+If you're looking for teammates for games, please use the games channel.
+
+Selling Accounts
+Do not try and sell your Fortnite account or any other accounts that would go against the TOS of those accounts.
+
+Consequences
+Choosing to break any of these rules will result in either a warning or a ban from the server at the discretion of the server owner or moderation crew.</p>
+            <h5 class="text-dark">BOUAZIZ</h5>
+            <h6 class="text-color">MY SPACE / TG TEAM</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- testimonial -->
+
+
+<!-- subscription -->
+
+<!-- footer part start -->
+<footer class="bg-secondary pt-lg-5">
+  <section class="section border-bottom border-color">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-5 mb-4 mb-md-0">
+          <img src="logo.png" height="150" width="150" class="mb-4" alt="agico">
+          <p class="text-light mb-4">its your space </p>
+          
+        </div>
+      
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h4 class="text-white mb-4">Contact Info</h4>
+          <p class="text-light">monastir.tunis.ariana .bizart </p>
+          <ul class="list-unstyled">
+            
+            <li class="mb-3"><a class="text-light" href="myspacetunis@gmail.com">myspacetunis@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer part end -->
+
+  <!-- copyright part start -->
+  <section class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-light">Copyright &copy;
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script>
+             <a href="https://discord.gg/tunisian-gang-your-own-world-963933542591627264">MY SPACE </a></p>
+        </div>
+        <div class="col-md-6 text-md-right text-center">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- copyright part end -->
+</footer>
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- venobox -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- Aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&amp;libraries=places"></script>
+<script src="plugins/google-map/gmap.js"></script>
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+
+
+<!-- Mirrored from demo.themefisher.com/agico/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Jun 2023 22:38:41 GMT -->
 </html>
