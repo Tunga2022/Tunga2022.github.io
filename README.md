@@ -1,10 +1,6 @@
-# Music-Player with JavaScript
+Project Demo : https://648e99873722947deac636f5--sage-dusk-64ff08.netlify.app/ 
 
-Function
-1) Random Song
-2) Previous Song
-3) Next Song
-4) Repeat Song
+![screencapture-648e99873722947deac636f5-sage-dusk-64ff08-netlify-app-2023-06-18-11_29_31](https://github.com/sunil9813/Bonik-Ecommerice-Website-in-React/assets/67497228/ddc909b1-385d-4d9b-bbfc-e6481f1ad3f9)
 
-The Layout Design of Music Player
-![Screenshot 2023-02-01 110931](https://user-images.githubusercontent.com/86345777/215935830-07cfc994-c4f7-421c-91c5-f2ad7a0d42d4.png)
+
+![screencapture-648e99873722947deac636f5-sage-dusk-64ff08-netlify-app-cart-2023-06-18-11_30_04](https://github.com/sunil9813/Bonik-Ecommerice-Website-in-React/assets/67497228/37d04d8f-96fb-4502-8087-58e71519b28a)
